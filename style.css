@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: #000000;
+  color: white;
+}
+
+
+.hero {
+  height: 100vh;
+  background: url(assets/BG.jpg) center / cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, black 40%, transparent);
+}
+
+.hero-content {
+  position: relative;
+  padding-left: 8%;
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: white;
+  color: black;
+}
+
+.section {
+  padding: 90px 10%;
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+}
+
+.Visi-misi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.Visi-misi-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: #141414;
+  transition: 0.3s;
+}
+
+.Visi-misi-card:hover {
+  transform: translateY(-8px);
+}
+
+.Visi { border-left: 4px solid #ffffff; }
+.Misi { border-left: 4px solid #ffffff; }
+
+.Visi-misi-card h3 {
+  margin-bottom: 12px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: #141414;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.planned { border-left: 4px solid #777; }
+.learning { border-left: 4px solid #f7b731; }
+.mastered { border-left: 4px solid #2ecc71; }
+
+.skill-card h3 {
+  margin-bottom: 12px;
+}
+
+.Prestasi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.Prestasi-card {
+  padding: 25px;
+  border-radius: 15px;
+  background: #141414;
+  transition: 0.3s;
+}
+
+.Prestasi-card:hover {
+  transform: translateY(-8px);
+}
+
+.Sertifikat { border-left: 4px solid #777; }
+.Lomba { border-left: 4px solid #777; }
+
+.Prestasi-card h3 {
+  margin-bottom: 12px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  padding: 22px;
+  background: #141414;
+  border-radius: 15px;
+  border: 1px solid #333;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.04);
+  border-color: red;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  color: gray;
+}
