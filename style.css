@@ -1,3 +1,30 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
