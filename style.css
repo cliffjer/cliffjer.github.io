@@ -37,7 +37,7 @@ transform:scale(1);
 
 100%{
 transform:scale(20);
-opacity:0;
+opacity:1;
 }
 }
 
