@@ -3,35 +3,6 @@ width:40px;
 height:auto;
 }
 
-.menu-btn{
-font-size:28px;
-color:white;
-cursor:pointer;
-}
-
-.sidebar{
-position:fixed;
-left:-220px;
-top:0;
-
-width:220px;
-height:100vh;
-
-background:#111;
-
-display:flex;
-flex-direction:column;
-gap:20px;
-
-padding:80px 20px;
-
-transition:0.3s;
-}
-
-.sidebar.active{
-left:0;
-}
-
 body{
 background:#000;
 margin:0;
