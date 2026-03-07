@@ -67,7 +67,6 @@ body {
 }
 
 .hero{
-height:100vh;
 background-image:url("assets/BG-desktop.jpg");
 background-size:cover;
 background-position:center;
@@ -77,6 +76,10 @@ background-position:center;
 
 .hero{
 background-image:url("assets/BG-mobile.jpg");
+  aling-items:flex-start;
+  padding-top:120px;
+  padding-left:25px;
+  padding-right:25px;
 }
 
 }
