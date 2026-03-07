@@ -1,5 +1,5 @@
-document.querySelector(".menu-btn").onclick = function(){
-document.getElementById("sidebar").classList.toggle("active");
+document.querySelector(".menu-btn").onclick = () =>{
+document.querySelector(".sidebar").classList.toggle("active")
 }
 
 const observer = new IntersectionObserver(entries => {
