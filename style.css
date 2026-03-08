@@ -154,7 +154,7 @@ color:gray;
 @media (max-width:768px){
 
 .hero{
-background-image:url("assets/BG-mobile.jpg");
+background-image:url("assets/backgroundhp.jpg");
 min-height:75vh;
 
 align-items:flex-start;
