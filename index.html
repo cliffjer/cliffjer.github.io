@@ -174,5 +174,25 @@ and to be an individual who can have a positive impact on the development of eng
 </footer>
 
 <script src="script.js"></script>
+
+    <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+  import { getFirestore } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC7DbkJDXYQ--sAUUHP-Wro-jN5wEDO_U",
+    authDomain: "cliffjerportofolio.firebaseapp.com",
+    projectId: "cliffjerportofolio",
+    storageBucket: "cliffjerportofolio.firebasestorage.app",
+    messagingSenderId: "435209152522",
+    appId: "1:435209152522:web:2a20677cf329f0d7ff97f3"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  console.log("Firebase nyala bro");
+</script>
+    
 </body>
 </html>
