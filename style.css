@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 .hero span {
-  color: #7c5cff;
+  color: #ffffff;
 }
 
 .hero p {
@@ -59,7 +59,7 @@ nav a:hover {
   margin-top: 20px;
   display: inline-block;
   padding: 12px 24px;
-  background: #7c5cff;
+  background: #605a75;
   color: white;
   text-decoration: none;
   width: fit-content;
