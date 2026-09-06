@@ -1,86 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cliff Sampul - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliff Jerikos Petrus Sampul | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome untuk Icon Sosial Media -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <header>
-    <div class="logo">logo.png</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <!-- HERO -->
+<!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="#">
+        <img src="assets/logo.png" alt="Cliff Jerikos Petrus Sampul Logo" class="site-logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#ongoing">On-Going</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- 1. Hero Section -->
   <section class="hero">
-    <h1>Hi, I'm <span>Cliff Jerikos Petrus Sampul</span></h1>
-    <p>Electronics enthusiast • Marine Tech enthusiast • Future engineer</p>
-    <a href="#projects" class="btn">View My Work</a>
+    <div class="hero-content">
+      <h1>Hi, I'm Cliff Jerikos Petrus Sampul</h1>
+      <p>Electronics enthusiast - Marine Tech enthusiast - Future engineer</p>
+      <a href="#about" class="btn">More About Me</a>
+    </div>
   </section>
 
-  <!-- ABOUT -->
+  <!-- 2. About Me Section -->
   <section id="about" class="section">
     <h2>About Me</h2>
-    <p>
-      I’m a student passionate about electronics, Marine Tech engineering, and web development.
-      I like building real-world projects and learning how systems work from the inside, making an system that link each other.
-    </p>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Smart Room System</h3>
-        <p>Auto lighting + RFID + sensor-based control system.</p>
-      </div>
-
-      <div class="card">
-        <h3>Line Follower Robot</h3>
-        <p>Arduino-based robot with sensor navigation.</p>
-      </div>
-
-      <div class="card">
-        <h3>RC Trophy Truck Concept</h3>
-        <p>ESP32 + receiver-based hybrid control system.</p>
-      </div>
+    <div class="about-content">
+      <p>
+          Saya adalah pelajar SMA yang berfokus pada eksplorasi teknologi dengan minat utama pada elektronika, embedded systems, IoT. Saya menikmati proses mengubah sebuah ide menjadi sistem yang dapat bekerja secara nyata, baik melalui perancangan rangkaian elektronik, pemrograman mikrokontroler, maupun pengembangan perangkat lunak pendukung.
+          Beberapa teknologi yang telah saya eksplorasi meliputi Arduino, ESP32, sensor dan aktuator, komunikasi I2C, RTC, display, motor servo, serta berbagai sistem berbasis IoT.
+          Saya cenderung belajar melalui eksperimen langsung. Bagi saya, proses debugging bukan sekadar mencari kesalahan, tetapi merupakan cara untuk memahami sistem secara lebih mendalam. Karena itu, saya terbiasa memecah masalah menjadi bagian-bagian kecil, menguji setiap komponen, menganalisis hasil, kemudian melakukan perbaikan secara bertahap.
+          Di luar teknologi, saya memiliki ketertarikan terhadap otomotif, sistem kelautan, fotografi, dan alam. Berbagai minat tersebut membantu saya melihat teknologi tidak hanya sebagai teori, tetapi sebagai sesuatu yang dapat diterapkan dalam kehidupan nyata.
+          Saat ini, saya terus membangun fondasi akademik dan keterampilan praktis sebagai persiapan untuk melanjutkan studi di perguruan tinggi.</p>
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- 3. Skill Tree Section (Interaktif Klik Langsung untuk Berputar) -->
   <section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Arduino</span>
-      <span>ESP32</span>
-      <span>Basic PLC</span>
-      <span>Electronics</span>
+    <h2>Skill Tree</h2>
+    <p class="subtitle">Klik pada salah satu node skill untuk memutar dan melihat detailnya.</p>
+    
+    <div class="skills-carousel-wrapper">
+      <div class="skill-tree-3d-container">
+        <div class="skill-wheel" id="skillWheel">
+          
+          <!-- Node Skill 1 -->
+          <div class="skill-node unlocked" data-title="Arduino & C++" data-desc="Pemrograman mikrokontroler dasar hingga menengah.">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Arduino</span>
+          </div>
+
+          <!-- Node Skill 2 -->
+          <div class="skill-node unlocked" data-title="PCB Design" data-desc="Mendesain skematik dan layout PCB (KiCAD/Eagle).">
+            <i class="fa-solid fa-circuit-board"></i>
+            <span>PCB Design</span>
+          </div>
+
+          <!-- Node Skill 3 -->
+          <div class="skill-node locked" data-title="PLC & Automasi" data-desc="Sedang mempelajari logika PLC dan SCADA Industri.">
+            <i class="fa-solid fa-robot"></i>
+            <span>PLC Automasi</span>
+          </div>
+
+          <!-- Node Skill 4 -->
+          <div class="skill-node locked" data-title="ROS (Robot OS)" data-desc="Rencana mempelajari sistem navigasi robotika lanjut.">
+            <i class="fa-solid fa-gear"></i>
+            <span>ROS</span>
+          </div>
+
+          <!-- Node Skill 5 -->
+          <div class="skill-node unlocked" data-title="IoT System" data-desc="Pengiriman data sensor real-time via ESP32/MQTT.">
+            <i class="fa-solid fa-wifi"></i>
+            <span>IoT System</span>
+          </div>
+
+          <!-- Node Skill 6 -->
+          <div class="skill-node locked" data-title="Control PID" data-desc="Algoritma kontrol presisi untuk motor dan suhu.">
+            <i class="fa-solid fa-sliders"></i>
+            <span>Control PID</span>
+          </div>
+
+          <!-- Node Skill 7 -->
+          <div class="skill-node locked" data-title="Control PID" data-desc="Alat penghasil listrik ramah lingkungan.">
+            <i class="fa-solid fa-bolt"></i>
+            <span>generator listrik bersih</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Kotak Deskripsi Skill -->
+    <div id="skill-description" class="skill-desc-box">
+      Klik salah satu node skill di atas untuk melihat detail.
+    </div>
+    <p class="subtitle">Daftar skill tree akan terus berkembang</p>
+  </section>
+  
+
+  <!-- 4. On-Going Projects Carousel -->
+  <section id="ongoing" class="section">
+    <h2>On-Going Projects</h2>
+    <div class="carousel">
+      <button class="carousel-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="carousel-track-container">
+        <ul class="carousel-track">
+          <li class="carousel-slide active">
+            <div class="project-card">
+              <h2>O.R.B.I.T.</h2>
+              <h3>Operational Room-Based Intelligent Technology</h3>
+              <p>Status: Pengembangan bagian dasar</p>
+            </div>
+          </li>
+          <li class="carousel-slide">
+            <div class="project-card">
+              <h2>SERO-BOT</h2>
+              <H3>robot pemilah sampah otomatis</H3>
+              <p>Status: Kalibrasi sensor</p>
+            </div>
+          </li>
+          <li class="carousel-slide">
+            <div class="project-card">
+              <h2>Spinosense</h2>
+              <H3>robot pemantau kondisi air</H3>
+              <p>Status: Teori dan rancangan awal</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button class="carousel-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Let’s build something interesting together.</p>
-    <a class="btn" href="mailto:cliffjer10@gmail.com">Send Email</a>
+  <!-- 5. Achievements -->
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <ul class="achievement-list">
+      <li><strong>2025:</strong> semifinalis jagoan hosting infa comp.</li>
+      <h4>sedang mencari lebih banyak</h4>
+    </ul>
   </section>
 
-  <footer>
-    <p>© 2026 Cliff Sampul — Built with focus, logic, & coffee</p>
-  </footer>
+  <!-- 7. Contact Me -->
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <div class="social-links">
+      <a href="https://wa.me/6281235486060" target="_blank" class="social-btn whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://instagram.com/cliffjerzzz" target="_blank" class="social-btn instagram">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+      <a href="mailto:cliffjer10@gmail.com" class="social-btn gmail">
+        <i class="fa-solid fa-envelope"></i> Gmail
+      </a>
+    </div>
+  </section>
 
+  <script src="script.js"></script>
 </body>
 </html>
