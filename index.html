@@ -10,7 +10,15 @@
 </head>
 <body>
 
-<!-- Navbar -->
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <img src="assets/logo.png" alt="Loading Logo" class="loader-logo">
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="logo-container">
       <a href="#">
@@ -20,12 +28,12 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#ongoing">On-Going</a></li>
+      <li><a href="#ongoing">Project</a></li>
       <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
+
   <!-- 1. Hero Section -->
   <section class="hero">
     <div class="hero-content">
@@ -40,15 +48,16 @@
     <h2>About Me</h2>
     <div class="about-content">
       <p>
-          Saya adalah pelajar SMA yang berfokus pada eksplorasi teknologi dengan minat utama pada elektronika, embedded systems, IoT. Saya menikmati proses mengubah sebuah ide menjadi sistem yang dapat bekerja secara nyata, baik melalui perancangan rangkaian elektronik, pemrograman mikrokontroler, maupun pengembangan perangkat lunak pendukung.
-          Beberapa teknologi yang telah saya eksplorasi meliputi Arduino, ESP32, sensor dan aktuator, komunikasi I2C, RTC, display, motor servo, serta berbagai sistem berbasis IoT.
-          Saya cenderung belajar melalui eksperimen langsung. Bagi saya, proses debugging bukan sekadar mencari kesalahan, tetapi merupakan cara untuk memahami sistem secara lebih mendalam. Karena itu, saya terbiasa memecah masalah menjadi bagian-bagian kecil, menguji setiap komponen, menganalisis hasil, kemudian melakukan perbaikan secara bertahap.
-          Di luar teknologi, saya memiliki ketertarikan terhadap otomotif, sistem kelautan, fotografi, dan alam. Berbagai minat tersebut membantu saya melihat teknologi tidak hanya sebagai teori, tetapi sebagai sesuatu yang dapat diterapkan dalam kehidupan nyata.
-          Saat ini, saya terus membangun fondasi akademik dan keterampilan praktis sebagai persiapan untuk melanjutkan studi di perguruan tinggi.</p>
+        Saya adalah pelajar SMA yang berfokus pada eksplorasi teknologi dengan minat utama pada elektronika, embedded systems, dan IoT. Saya menikmati proses mengubah sebuah ide menjadi sistem yang dapat bekerja secara nyata, baik melalui perancangan rangkaian elektronik, pemrograman mikrokontroler, maupun pengembangan perangkat lunak pendukung.
+        <br><br>
+        Beberapa teknologi yang telah saya eksplorasi meliputi Arduino, ESP32, sensor dan aktuator, komunikasi I2C, RTC, display, motor servo, serta berbagai sistem berbasis IoT. Saya cenderung belajar melalui eksperimen langsung. Bagi saya, proses debugging bukan sekadar mencari kesalahan, tetapi merupakan cara untuk memahami sistem secara lebih mendalam.
+        <br><br>
+        Di luar teknologi, saya memiliki ketertarikan terhadap otomotif, sistem kelautan, fotografi, dan alam. Saat ini, saya terus membangun fondasi akademik dan keterampilan praktis sebagai persiapan untuk melanjutkan studi di perguruan tinggi.
+      </p>
     </div>
   </section>
 
-  <!-- 3. Skill Tree Section (Interaktif Klik Langsung untuk Berputar) -->
+  <!-- 3. Skill Tree Section -->
   <section id="skills" class="section">
     <h2>Skill Tree</h2>
     <p class="subtitle">Klik pada salah satu node skill untuk memutar dan melihat detailnya.</p>
@@ -94,9 +103,9 @@
           </div>
 
           <!-- Node Skill 7 -->
-          <div class="skill-node locked" data-title="Control PID" data-desc="Alat penghasil listrik ramah lingkungan.">
+          <div class="skill-node locked" data-title="Clean Energy Generator" data-desc="Alat penghasil listrik ramah lingkungan.">
             <i class="fa-solid fa-bolt"></i>
-            <span>generator listrik bersih</span>
+            <span>Generator Bersih</span>
           </div>
 
         </div>
@@ -109,7 +118,6 @@
     </div>
     <p class="subtitle">Daftar skill tree akan terus berkembang</p>
   </section>
-  
 
   <!-- 4. On-Going Projects Carousel -->
   <section id="ongoing" class="section">
@@ -128,14 +136,14 @@
           <li class="carousel-slide">
             <div class="project-card">
               <h2>SERO-BOT</h2>
-              <H3>robot pemilah sampah otomatis</H3>
+              <h3>Robot Pemilah Sampah Otomatis</h3>
               <p>Status: Kalibrasi sensor</p>
             </div>
           </li>
           <li class="carousel-slide">
             <div class="project-card">
               <h2>Spinosense</h2>
-              <H3>robot pemantau kondisi air</H3>
+              <h3>Robot Pemantau Kondisi Air</h3>
               <p>Status: Teori dan rancangan awal</p>
             </div>
           </li>
@@ -145,13 +153,41 @@
     </div>
   </section>
 
-  <!-- 5. Achievements -->
+  <!-- 5. Photo Gallery Section -->
+  <section id="gallery" class="section">
+    <h2>Project Gallery</h2>
+    <p class="subtitle">Dokumentasi fisik hardware, perakitan komponen, dan prototipe proyek.</p>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="assets/foto1.jpeg" alt="Dokumentasi Proyek O.R.B.I.T." class="gallery-img">
+        <div class="gallery-overlay">
+          <span>O.R.B.I.T.</span>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/foto 2.jpeg" alt="Dokumentasi Proyek SERO-BOT" class="gallery-img">
+        <div class="gallery-overlay">
+          <span>SERO-BOT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Lightbox View">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- 6. Achievements -->
   <section id="achievements" class="section">
     <h2>Achievements</h2>
     <ul class="achievement-list">
-      <li><strong>2025:</strong> semifinalis jagoan hosting infa comp.</li>
-      <h4>sedang mencari lebih banyak</h4>
+      <li><strong>2025:</strong> Semifinalis Jagoan Hosting INFA COMP</li>
     </ul>
+    <p class="subtitle">Sedang berjuang meraih lebih banyak pencapaian.</p>
   </section>
 
   <!-- 7. Contact Me -->
@@ -169,6 +205,11 @@
       </a>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Cliff Jerikos Petrus Sampul. All rights reserved.</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
