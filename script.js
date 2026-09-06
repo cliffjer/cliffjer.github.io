@@ -100,12 +100,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const isUnlocked = clickedNode.classList.contains('unlocked');
 
       descBox.innerHTML = `
-        <h3 style="color: ${isUnlocked ? '#8b79e7' : '#888'}">${title}</h3>
-        <p style="font-size:0.9rem; margin-top:5px; color:#ccc;">
-          <strong>Status:</strong> ${isUnlocked ? '✓ Dikuasai' : 'Akan Dipelajari'}<br>
-          ${desc}
-        </p>
-      `;
+  <h3 style="color: ${isUnlocked ? '#8b79e7' : '#888'}">${title}</h3>
+  <p style="font-size:0.9rem; margin-top:5px; color:#ccc;">
+    <strong>Status:</strong> ${isUnlocked ? '<i class="fa-regular fa-circle-check"></i> Dikuasai' : '<i class="fa-solid fa-lock"></i> Akan Dipelajari'}<br>
+    ${desc}
+  </p>
+`;
     }
 
     // Assign event listener ke tiap node
