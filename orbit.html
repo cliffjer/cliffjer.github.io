@@ -27,23 +27,33 @@
     <h2>O.R.B.I.T.</h2>
     <p class="subtitle" style="text-align: left;">Operational Room-Based Intelligent Technology</p>
       
-      <h3 style="color: #8b79e7; margin-top: 0;">Latar Belakang</h3>
-      <p>Tuliskan alasan kenapa kamu membuat proyek ini. Misalnya masalah efisiensi atau kebutuhan kontrol otomatisasi ruangan.</p>
+      <h3 style="color: #8b79e7; margin-top: 0;">Apa itu O.R.B.I.T?</h3>
+      <p>O.R.B.I.T adalah sebuah project eksperimental berbasis IoT untuk kecerdasan buatan pada ruang kamar pribadi yang di desain untuk memonitoring dan mengkontrol hampir seluruh perangkat di kamar</p>
 
-      <h3 style="color: #8b79e7; margin-top: 20px;">🎯 Tujuan Proyek</h3>
-      <p>Tujuan utama dari sistem O.R.B.I.T., misalnya pemantauan suhu, kontrol lampu, atau integrasi sensor IoT secara otomatis.</p>
+      <h3 style="color: #8b79e7; margin-top: 20px;">Ide Utama</h3>
+      <p>Ide utama dari O.R.B.I.T sendiri adalah J.A.R.V.I.S pada film ironman dimana sebuah sistem yang dapat membantu mempermudah pekerjaan di ruang kamar</p>
 
-      <h3 style="color: #8b79e7; margin-top: 20px;">⚡ Komponen & Teknologi</h3>
+      <h3 style="color: #8b79e7; margin-top: 20px;">Masalah yang di pecahkan</h3>
       <ul style="margin-left: 20px; color: #ccc;">
-        <li>ESP32 / Arduino</li>
-        <li>Sensor Suhu DHT22</li>
-        <li>Relay Module 4 Channel</li>
-        <li>Protokol Komunikasi MQTT / Blynk</li>
+        <li>Aksesbilitas</li>
+        <li>Mobilitas</li>
+        <li>Efisiensi</li>
+        <li>Monitoring Jarak Jauh</li>
       </ul>
 
-      <h3 style="color: #8b79e7; margin-top: 20px;">📊 Status Saat Ini</h3>
-      <p><span style="color: #2ecc71;">✓</span> Penguji coba bagian dasar dan skematik awal.</p>
+      <h3 style="color: #8b79e7; margin-top: 20px;">Hardware</h3>
+    <h4>V1 "The Time keeper"</h4>
+      <li>ESP32 Devkit</li>
+    <li>RTC DS3231</li>
+    <li>7 segment 1 inch</li>
+    <li>IC MAX 7219</li>
 
+    <h3 style="color: #8b79e7; margin-top: 20px;">Failures</h3>
+    <h4>V1 "The Time keeper"</h4>
+      <li>Problem:RTC bisa drift dan meleset dari waktu seharusnya</li>
+    <li>Investigasi:cari cara supaya ESP32 bisa membantu mengkoreksi RTC</li>
+    <li>solusi:menyambungkan ESP dengan internet supaya bisa membantu mengkoreksi RTC setiap beberapa bulan sekali</li>
+    <li>hasil:RTC akan di koreksi oleh ESP sehingga RTC bisa lebih tepat</li>
     </div>
   </section>
 
