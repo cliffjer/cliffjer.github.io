@@ -11,7 +11,6 @@ body {
   color: #ffffff;
 }
 
-/* Styling Preloader Screen */
 #preloader {
   position: fixed;
   top: 0;
@@ -33,7 +32,6 @@ body {
   gap: 20px;
 }
 
-/* Animasi Denyut / Glow pada Logo */
 .loader-logo {
   height: 80px;
   width: auto;
@@ -52,7 +50,6 @@ body {
   }
 }
 
-/* Lingkaran Loading Berputar */
 .loader-spinner {
   width: 40px;
   height: 40px;
@@ -72,7 +69,6 @@ body {
   visibility: hidden;
 }
 
-/* Navbar & Logo */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -118,13 +114,11 @@ body {
   color: #6c5ce7;
 }
 
-/* Sections Base */
 .section {
   padding: 100px 50px;
   text-align: center;
 }
 
-/* Hero Section */
 .hero {
   height: 100vh;
   display: flex;
@@ -156,13 +150,11 @@ body {
   background-color: #786fa6;
 }
 
-/* Subtitle */
 .subtitle {
   color: #888;
   margin-bottom: 30px;
 }
 
-/* Skill Tree (Bianglala Rotasi) */
 .skills-carousel-wrapper {
   display: flex;
   align-items: center;
@@ -248,7 +240,6 @@ body {
   color: #dcdde1;
 }
 
-/* Carousel On-Going Projects */
 .carousel {
   position: relative;
   max-width: 600px;
@@ -281,7 +272,6 @@ body {
   cursor: pointer;
 }
 
-/* Gallery Grid Layout */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -331,7 +321,6 @@ body {
   opacity: 1;
 }
 
-/* Lightbox Style */
 .lightbox {
   display: none;
   position: fixed;
@@ -369,7 +358,6 @@ body {
   cursor: pointer;
 }
 
-/* Cards & Achievements */
 .project-card {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -379,7 +367,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 12px; /* Memberikan jarak otomatis antar elemen */
+  gap: 12px; 
   text-align: center;
 }
 
@@ -399,7 +387,6 @@ body {
   line-height: 2;
 }
 
-/* Social Contact Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -428,7 +415,6 @@ body {
   transform: translateY(-3px);
 }
 
-/* Footer Style */
 .site-footer {
   text-align: center;
   padding: 30px 20px;
@@ -438,26 +424,21 @@ body {
   font-size: 0.9rem;
 }
 
-/* Responsif Tampilan HP */
 @media (max-width: 768px) {
-  /* Beri jarak atas agar tidak tertutup navbar */
   .hero {
     padding-top: 120px;
     min-height: auto;
   }
 
-  /* Kecilkan ukuran font judul di HP */
   .hero-content h1 {
     font-size: 1.8rem;
     line-height: 1.3;
   }
 
-  /* Rapikan ukuran subtitle & tombol */
   .hero-content p {
     font-size: 0.95rem;
   }
 
-  /* Atur ulang posisi navbar jika terlalu padat */
   .navbar {
     padding: 10px 15px;
   }
