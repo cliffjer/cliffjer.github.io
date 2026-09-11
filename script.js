@@ -1,4 +1,3 @@
-// 1. PRELOADER: Dipicu saat SELURUH ASET (gambar/style) selesai dimuat penuh
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
@@ -8,10 +7,8 @@ window.addEventListener('load', () => {
   }
 });
 
-// 2. LOGIKA UTAMA: Dipicu setelah STRUKTUR HTML selesai dimuat
 document.addEventListener('DOMContentLoaded', () => {
 
-  // --- LOGIKA GALERI LIGHTBOX ---
   const galleryItems = document.querySelectorAll('.gallery-item');
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
@@ -43,18 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- LOGIKA SKILL TREE: ROTASI BIANGLALA ---
   const wheel = document.getElementById('skillWheel');
   const nodes = document.querySelectorAll('#skillWheel .skill-node');
   const descBox = document.getElementById('skill-description');
 
   if (wheel && nodes.length > 0 && descBox) {
     const totalNodes = nodes.length;
-    const radius = 130; // Jarak node dari titik pusat
+    const radius = 130; 
     const angleStep = 360 / totalNodes;
-    let currentWheelAngle = 0; // Sudut akumulasi rotasi roda
+    let currentWheelAngle = 0; 
 
-    // Tata posisi node melingkar
     function setupNodes() {
       nodes.forEach((node, index) => {
         const baseAngleDeg = (index * angleStep) - 90;
@@ -68,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Memutar node yang diklik ke posisi puncak (-90 deg)
     function rotateNodeToTop(clickedNode) {
       const nodeBaseAngle = parseFloat(clickedNode.getAttribute('data-angle'));
       let targetRotation = -90 - nodeBaseAngle;
@@ -87,14 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const x = Math.round(radius * Math.cos(angleRad));
         const y = Math.round(radius * Math.sin(angleRad));
 
-        // Jaga agar teks & ikon di dalam node tetap tegak lurus
         node.style.transform = `translate(${x}px, ${y}px) rotate(${-currentWheelAngle}deg)`;
         node.classList.remove('active-node');
       });
 
       clickedNode.classList.add('active-node');
 
-      // Tampilkan deskripsi
       const title = clickedNode.getAttribute('data-title') || '';
       const desc = clickedNode.getAttribute('data-desc') || '';
       const isUnlocked = clickedNode.classList.contains('unlocked');
@@ -108,17 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
 `;
     }
 
-    // Assign event listener ke tiap node
     nodes.forEach(node => {
       node.addEventListener('click', () => rotateNodeToTop(node));
     });
 
-    // Inisialisasi awal
     setupNodes();
     rotateNodeToTop(nodes[0]);
   }
 
-  // --- CAROUSEL PROYEK ON-GOING ---
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(document.querySelectorAll('.carousel-slide'));
   const nextButton = document.querySelector('.next-btn');
@@ -142,7 +131,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- HAK CIPTA FOOTER ---
   const yearSpan = document.getElementById('year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
